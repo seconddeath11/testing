@@ -9,4 +9,8 @@ public class LinearEquationSolverTest {
     void simpleTestCase(){
         assertEquals(2, LinearEquationSolver.solve(3, 6));
     }
+    @Test
+    void rationalTest(){
+        assertEquals(-2.5, LinearEquationSolver.solve(-3.5, 8.75));
+    }
 }
