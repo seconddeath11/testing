@@ -24,5 +24,5 @@ public class LinearEquationSolverTest {
     @Test
     void precision2Test(){assertThat(LinearEquationSolver.solve(3, 1)).isEqualTo(0.3, withPrecision(2d));}
     @Test
-    void testNullCase(){assertThat(LinearEquationSolver.solve(0, 1)).isNull();}
+    void noRootsCase(){assertThat(LinearEquationSolver.solve(0, 1)).isNull();}
 }
