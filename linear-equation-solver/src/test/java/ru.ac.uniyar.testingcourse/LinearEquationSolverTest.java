@@ -25,4 +25,11 @@ public class LinearEquationSolverTest {
     void precision2Test(){assertThat(LinearEquationSolver.solve(3, 1)).isEqualTo(0.3, withPrecision(2d));}
     @Test
     void noRootsCase(){assertThat(LinearEquationSolver.solve(0, 1)).isNull();}
+    @Test
+    void exceptionCase() {
+        assertThatThrownBy(() -> {
+            LinearEquationSolver.solve(0, 0);
+        }).isInstanceOf(LinearEquationSolver.AnyNumberIsRootException.class);
+    }
+
 }
