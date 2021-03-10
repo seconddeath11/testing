@@ -22,5 +22,5 @@ public class LinearEquationSolverTest {
     @Test
     void precisionTest(){assertThat(LinearEquationSolver.solve(3, 1)).isCloseTo(0.3, within(0.1));}
     @Test
-    void precision2Test(){assertThat(LinearEquationSolver.solve(3, 1)).isEqualTo(0.3, withPrecision(2d));}
+    void precision2Test(){assertThat(LinearEquationSolver.solve(3, 2)).isEqualTo(0.3, withPrecision(2d));}
 }
