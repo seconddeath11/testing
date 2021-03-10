@@ -1,0 +1,2 @@
+ru.ac.uniyar.testingcourse/LinearEquationSolverTest.java
+ ru.ac.uniyar.testingcourse.LinearEquationSolverTest

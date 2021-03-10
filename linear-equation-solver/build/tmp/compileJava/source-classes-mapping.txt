@@ -1,0 +1,3 @@
+ru/ac/uniyar/testingcourse/LinearEquationSolver.java
+ ru.ac.uniyar.testingcourse.LinearEquationSolver
+ ru.ac.uniyar.testingcourse.LinearEquationSolver$AnyNumberIsRootException
