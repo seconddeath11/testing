@@ -16,7 +16,9 @@ public class LinearEquationSolverTest {
     @Test
     void precisionOldTo(){assertEquals(0.33, LinearEquationSolver.solve(3, 1), 0.5);}
     @Test
-    void equalTo(){assertThat(LinearEquationSolver.solve(-3.5, 8.75)).isEqualTo(-2.5);}
+    void simpleCase(){assertThat(LinearEquationSolver.solve(1, 3)).isEqualTo(3);}
+    @Test
+    void rationalCase(){assertThat(LinearEquationSolver.solve(-3.5, 8.75)).isEqualTo(-2.5);}
     @Test
     void precisionTest(){assertThat(LinearEquationSolver.solve(3, 1)).isCloseTo(0.3, within(0.1));}
     @Test

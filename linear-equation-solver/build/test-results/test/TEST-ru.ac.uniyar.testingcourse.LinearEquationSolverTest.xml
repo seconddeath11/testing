@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2021-03-10T07:17:03" hostname="PC216-03" time="0.324">
+<testsuite name="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-03-10T07:20:21" hostname="PC216-03" time="0.302">
   <properties/>
-  <testcase name="equalTo()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.299"/>
-  <testcase name="precision2Test()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.008"/>
-  <testcase name="precisionOldTo()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.009"/>
+  <testcase name="simpleCase()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.278"/>
+  <testcase name="precision2Test()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.006"/>
+  <testcase name="precisionOldTo()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.01"/>
+  <testcase name="rationalCase()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.0"/>
   <testcase name="rationalTest()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.001"/>
   <testcase name="precisionTest()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.001"/>
-  <testcase name="simpleTestCase()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.0"/>
+  <testcase name="simpleTestCase()" classname="ru.ac.uniyar.testingcourse.LinearEquationSolverTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
