@@ -17,8 +17,10 @@ public class LaserTest {
         SystemTimeMock systemTimeMock = new SystemTimeMock();
         @Test
         void simpleCase(){
+            systemTimeMock.setMockedTime(0);
             WarmupController contr = new WarmupController();
             contr.markLaserOn();
+            systemTimeMock.setMockedTime(120000);
             assertThat(contr.getRemainingTime()).isEqualTo(0.0);
         }
     }
