@@ -23,5 +23,18 @@ public class LaserTest {
             systemTimeMock.setMockedTime(120000);
             assertThat(contr.getRemainingTime()).isEqualTo(0.0);
         }
+
+        @Test
+        void foolCooling(){
+            systemTimeMock.setMockedTime(0);
+            WarmupController contr = new WarmupController();
+            contr.markLaserOn();
+
+            systemTimeMock.setMockedTime(120000);
+            contr.markLaserOff();
+            systemTimeMock.setMockedTime(180000);
+            contr.markLaserOn();
+            assertThat(contr.getRemainingTime()).isEqualTo(120.0);
+        }
     }
 }
