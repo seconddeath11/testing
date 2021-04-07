@@ -1,7 +1,8 @@
 package ru.ac.uniyar.testingcourse;
 import mockit.Mock;
 import mockit.MockUp;
-import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.*;
 public class LaserTest {
     public static final class SystemTimeMock extends MockUp<System>{
         long mockedTime = 0;
@@ -18,7 +19,7 @@ public class LaserTest {
         void simpleCase(){
             WarmupController contr = new WarmupController();
             contr.markLaserOn();
-            assertThat(contr.getRemainingTime().isEqualTo(0.0));
+            assertThat(contr.getRemainingTime()).isEqualTo(0.0);
         }
     }
 }
