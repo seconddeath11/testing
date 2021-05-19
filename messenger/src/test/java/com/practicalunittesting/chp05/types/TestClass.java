@@ -26,7 +26,12 @@ public class TestClass {
     }
     @Test
     void testTemplateEngineCalling(){
+        when(client.getEmail())
+                .thenReturn(EMAIL);
 
+        Messenger testedMessenger = new Messenger(server, templateEngine);
+        testedMessenger.sendMessage(client, MESSAGE);
+        verify(templateEngine).prepareMessage(MESSAGE, client);
     }
 
 }
