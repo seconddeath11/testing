@@ -1,0 +1,8 @@
+com/practicalunittesting/chp05/types/TemplateEngine.java
+ com.practicalunittesting.chp05.types.TemplateEngine
+com/practicalunittesting/chp05/types/Client.java
+ com.practicalunittesting.chp05.types.Client
+com/practicalunittesting/chp05/types/Messenger.java
+ com.practicalunittesting.chp05.types.Messenger
+com/practicalunittesting/chp05/types/MailServer.java
+ com.practicalunittesting.chp05.types.MailServer

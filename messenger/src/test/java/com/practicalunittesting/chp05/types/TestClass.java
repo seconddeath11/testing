@@ -14,7 +14,7 @@ public class TestClass {
     private final MailServer server = mock(MailServer.class);
     private final TemplateEngine templateEngine = mock(TemplateEngine.class);
     @Test
-    void testTemplateEngineCalling(){
+    void testMailServerCall(){
         when(client.getEmail())
                 .thenReturn(EMAIL);
         when(templateEngine.prepareMessage(MESSAGE, client))
@@ -24,4 +24,9 @@ public class TestClass {
         testedMessenger.sendMessage(client, MESSAGE);
         verify(server).send(EMAIL, PREPARED_MESSAGE);
     }
+    @Test
+    void testTemplateEngineCalling(){
+
+    }
+
 }
