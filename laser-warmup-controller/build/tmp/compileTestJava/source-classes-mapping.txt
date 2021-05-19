@@ -1,0 +1,3 @@
+ru.ac.uniyar.testingcourse/LaserTest.java
+ ru.ac.uniyar.testingcourse.LaserTest
+ ru.ac.uniyar.testingcourse.LaserTest$SystemTimeMock
